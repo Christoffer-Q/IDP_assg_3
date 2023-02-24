@@ -35,5 +35,10 @@ class Program
         elements[5] = new Element(
             "Quicksilver", 80, Type.Metal, 234.3210, 629.88
         );
+
+        foreach (Element element in elements)
+        {
+            element.PrintElement();
+        }
     }
 }
