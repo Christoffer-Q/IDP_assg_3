@@ -8,17 +8,32 @@ class Program
         program.run();
     }
 
-    private void run() {
+    private void run()
+    {
         Element oxygen = new Element(
             "Oxygen", 8, Type.NonMetal, 54.36, 90.188
         );
         Element iron = new Element(
-            "Iron", 26, Type.Metal, 1811.0, 3134.0 
+            "Iron", 26, Type.Metal, 1811.0, 3134.0
         );
         Element gold = new Element(
             "Gold", 79, Type.Metal, 1337.33, 3243
         );
 
         oxygen.PrintElement();
+
+        Element[] elements = new Element[6];
+        elements[0] = oxygen;
+        elements[1] = iron;
+        elements[2] = gold;
+        elements[3] = new Element(
+            "Hydrogen", 1, Type.NonMetal, 13.99, 20.271
+        );
+        elements[4] = new Element(
+            "Bromine", 35, Type.NonMetal, 265.8, 332.0
+        );
+        elements[5] = new Element(
+            "Quicksilver", 80, Type.Metal, 234.3210, 629.88
+        );
     }
 }
