@@ -40,5 +40,9 @@ class Program
         {
             element.PrintElement();
         }
+
+        foreach (Element element in elements) {
+            System.Console.WriteLine("Element name: {0}", element.Name);
+        }
     }
 }
