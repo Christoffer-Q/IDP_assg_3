@@ -20,8 +20,10 @@ class Program
             "Gold", 79, Type.Metal, 1337.33, 3243
         );
 
+        System.Console.WriteLine("\n=== Task 3. ===");
         oxygen.PrintElement();
 
+        System.Console.WriteLine("\n=== Task 4. ===");
         Element[] elements = new Element[6];
         elements[0] = oxygen;
         elements[1] = iron;
@@ -36,13 +38,24 @@ class Program
             "Quicksilver", 80, Type.Metal, 234.3210, 629.88
         );
 
+        System.Console.WriteLine("\n=== Task 5. ===");
         foreach (Element element in elements)
         {
             element.PrintElement();
         }
 
+        System.Console.WriteLine("\n=== Task 6. ===");
         foreach (Element element in elements) {
             System.Console.WriteLine("Element name: {0}", element.Name);
+        }
+
+        System.Console.WriteLine("\n=== Task 7. ===");
+        foreach (Element element in elements)
+        {
+            if (element.MeltingPoint < 273.16 && element.BoilingPoint > 273.16)
+            {
+                element.PrintElement();
+            }
         }
     }
 }
