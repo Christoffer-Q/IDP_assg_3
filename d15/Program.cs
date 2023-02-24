@@ -18,5 +18,7 @@ class Program
         Element gold = new Element(
             "Gold", 79, Type.Metal, 1337.33, 3243
         );
+
+        oxygen.PrintElement();
     }
 }
