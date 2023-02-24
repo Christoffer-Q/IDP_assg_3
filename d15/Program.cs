@@ -45,7 +45,8 @@ class Program
         }
 
         System.Console.WriteLine("\n=== Task 6. ===");
-        foreach (Element element in elements) {
+        foreach (Element element in elements)
+        {
             System.Console.WriteLine("Element name: {0}", element.Name);
         }
 
